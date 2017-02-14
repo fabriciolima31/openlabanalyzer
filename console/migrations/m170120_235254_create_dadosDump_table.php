@@ -21,7 +21,7 @@ class m170120_235254_create_dadosDump_table extends Migration
         $this->createTable('dadosDump', [
             'id' => $this->primaryKey(),
             'campo1' => $this->string(200),
-            'campo2' => $this->string(200),
+            'aluno_id' => $this->integer()->notNull(),
             'campo3' => $this->string(200),
             'campo4' => $this->string(200),
             'campo5' => $this->string(200),
@@ -29,7 +29,7 @@ class m170120_235254_create_dadosDump_table extends Migration
             'campo7' => $this->string(200),
             'campo8' => $this->string(200),
             'campo9' => $this->string(200),
-            'aluno_id' => $this->integer()->notNull(),
+            
         ], $tableOptions);
 
         // creates index for column `aluno_id`
